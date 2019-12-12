@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding-top: 0;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(218, 7, 87);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    margin: 2% 20% 0 20% ;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    padding-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+      display: inline-block;
+      padding-left: 60px;
+  }
+
+  li > a {
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 1em;
+  }
+
+.name {
+    padding: 0;
+    float: left;
+}
+
+.right-nav {
+    width: 100%;
+    text-align: right;
+}
+
+.CTA_Text {
+    margin: 4% 20% 100px 20% ;
+}
+
+.title-section {
+    width: 20%;
+    float: left;
+}
+
+.title {
+    font-size: 2em;
+    margin-right: 2%;
+    padding-right: 1%;
+    width: 20%;
+}
+
+
+.blirb {
+    padding: 0;
+    width: 55%;
+    margin: 4% 20% 0 20% ;
+}
+
+.main-image {
+}
+
+.goals {
+    margin-top: -4px;
+    padding: 125px 20% 350px 20%;
+    background-color: rgb(26, 26, 26);
+}
+
+.first {
+    width: 46%;
+    float: left;
+}
+
+.second {
+    width: 46%;
+    float: right;
+}
+
+.gap {
+margin: 50px 4% 0 0;
+}
+
+.process {
+    padding: 125px 20% 350px 20%;
+    background-image: url(/images/1.jpg.png);
+    background-repeat: no-repeat;
+    background-position:top right;
+    object-fit: cover;
+    height: auto;
+    background-color: rgb(211, 0, 53);
+}
+
+.solution {
+    color: black;
+    padding: 125px 20% 350px 20%;
+    background-color: rgb(238, 238, 238);
+}
+
+.solution >h1 {
+    float: right;
+}
+
+.solution-text {
+    float: right;
+}
