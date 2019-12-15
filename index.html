@@ -1,71 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Raymond Chen</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="fade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link rel="stylesheet" href="main.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-            <ul>
-                <div class="right-nav">
-                        <li class="name"><a href="news.asp">Raymond Chen</a></li>
-                    <li><a href="news.asp">Work</a></li>
-                    <li><a href="contact.asp">Contact</a></li>
-                    <li><a href="about.asp">About</a></li>
+        <nav id="navbar" class="">
+                <div class="nav-wrapper">
+                  <!-- Navbar Logo -->
+                  <div class="logo">
+                    <!-- Logo Placeholder for Inlustration -->
+
+                    <a href="."><img src="/images/rc logo.svg" alt=""></a>
+                  </div>
+                  <!-- Navbar Links -->
+                  <ul id="menu">
+                    <li><a href=".">Work</a></li><!--
+                 --><li><a href="mailto:contact@rchendesigns.com">Contact</a></li>
                   </ul>
                 </div>
-    </nav>
-    <header>
-        <h1 class="CTA_text">Graphic Designer Interested in UI+UX</h1>
-        <p class="bio">Graduate of University of Massachusetts Dartmouth, 2020 with a BFA in Graphic Design.
-            I am inspired by the technology that surrounds us in our modern world and I am particularly
-            curious when it comes to the topics of UI+UX. </p>
-            <div class="curious">
-        <h4>CURIOUS?  <svg version="1.1" id="down_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-       <style type="text/css">
-           .st0{fill:#CC0099;}
-           .st1{fill:none;}
-       </style>
-       <path class="st0" d="M7.7,8.3l4.59,4.58l4.59-4.58L18.3,9.7l-6,6l-6-6L7.7,8.3z"/>
-       <path class="st1" d="M0,0h24v24H0V0z"/>
-       </svg></h4>
-    </div>
-    </header>
-    <!-- portfolio work -->
-    <section>
-        <div class="work">
-        <div class="image">
-            <img src="/images/calluna spread.png" alt="Calluna">
-        </div>
-        <div class="info">
-                <h3>Calluna</h3>
-                <h4>Brand | Mobile App</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum labore incidunt et magni. Repellat explicabo esse aut doloribus quam doloremque ut natus, tempore rerum, aliquid tempora, minus nisi. Quia, porro eius. Ipsa cum provident explicabo fugit eos esse dolor.</p>
-                <div class="see-more"><h4>See more</h4></div>
-            </div> 
-            </div>    
-    </section>
-    <section>
-            <div class="work">
-                    <div class="info2">
-                            <h3>SSDB Site</h3>
-                            <h4>Info Design | Website</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum labore incidunt et magni. Repellat explicabo esse aut doloribus quam doloremque ut natus, tempore rerum, aliquid tempora, minus nisi. Quia, porro eius. Ipsa cum provident explicabo fugit eos esse dolor.</p>
-                            <div class="see-more">
-                                    <h4>See More</h4>
-                                </div>
-                        </div>    
-            <div class="image2">
-                <img src="/images/3213123.png" alt="SSDb">
+              </nav>
+              
+              
+              <!-- Menu Icon -->
+              <div class="menuIcon">
+                <span class="icon icon-bars"></span>
+                <span class="icon icon-bars overlay"></span>
+              </div>
+              
+              
+              <div class="overlay-menu">
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+              <section class="header">
+                    <header>
+                        <div class="head-container animated fadeInDown" >
+                            <div class="cta-text"><h1>Hello! I'm <span style='color: rgb(0, 17, 255);'>Raymond Chen</span> — Graphic Designer interested in UI+UX</h1>
+                                <p class="bio">Graduate of <span style='color: rgb(0, 17, 255);'>University of Massachusetts Dartmouth</span>, 2020 with a <span style='color: rgb(0, 17, 255);'>BFA in Graphic Design</span>. I am inspired by the technology that surrounds us in our modern world and I am particularly curious when it comes to the topics of <span style='color: rgb(0, 17, 255);'>UI+UX</span>.</p>
+                            </div>
+                            <div class="peak animated bounce delay-2s"><a href="#portfolio">Take a Peak</div></a>
+                        </div>
+                    </header>
+                </section>
+                <!-- start of work portfolio -->
+    <section class="section-a" id="portfolio">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="2000">
+        <div class="container">
+            <div class="text-container">
+                <h1 class="title calluna-color">Calluna — Seizure Monitoring </h1>
+                <p class="description">Calluna is a brand that strives to offer peace of mind to those that suffer directly or indirectly from the effects of epilepsy.</p>
+                <a href="/calluna.html"><button class="button button1">See More</button></a>
             </div>
-            </div> 
+            <div class="right-image"><a href="/calluna.html"><img src="/images/test3.png" alt=""></div>
+            </div>
+        </a>
+        </div>
+    </section>
+    <section class="section-a">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="2000">
+            <div class="container">
+                <div class="right-image"><a href="/ssdb.html"><img src="/images/SSDB2.png" alt=""></a></div>
+                <div class="text-container">
+                        <h1 class="title calluna-color">SSDb — Central Hub for Solid State Storage and Tech News</h1>
+                        <p class="description">A website mockup that organizes vaying aspects of Solid State Storage into an easy to read and manage system.</p>
+                        <a href="/ssdb.html">
+                        <button class="button button1">See More</button></a>
+                </div>
+                    </div>
+            </div>
         </section>
-</body>
+        <section class="section-a">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+                data-aos-duration="2000">
+                <div class="container">
+                    <div class="text-container">
+                        <h1 class="title calluna-color">Lipton Rebrand — Be More Tea</h1>
+                        <p class="description">A poster based off the style of a Sachplakat we were tasked with integrating modern design into an only style</p>
+                        <a href="/lipton.html">
+                        <button class="button button1">See More</button></a>
+                    </div>
+                    <div class="right-image"><a href="/lipton.html"><img src="/images/lipton.png" alt=""></video></div></a>
+                </div>
+                </div>
+            </section>
+            <section class="section-a">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+                    data-aos-duration="2000">
+                    <div class="container">
+                        <div class="right-image"><a href="/Allenspond.html"><img src="/images/massaudubon.png" alt=""></a></div>
+                        <div class="text-container">
+                                <h1 class="title calluna-color">AllensPond — Gift & Pledge Forms </h1>
+                                <p class="description">AllensPond was in need of new forms for sponsorships and donations. As the project evolved they wanted more than just another generic form </p>
+                                <a href="/Allenspond.html"><button class="button button1">See More</button></a>
+                            </div>
+                            </div>
+                    </div>
+                </section>
+        <section class="section-a">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+                data-aos-duration="2000">
+                <div class="container">
+                    <div class="text-container">
+                        <h1 class="title calluna-color">ARTIVIVE — Augmented Reality Poster</h1>
+                        <p class="description">A poster based off the style of a Sachplakat we were tasked with integrating modern design into an old style.</p>
+                        <a href="/coke_Artivive.html"><button class="button button1">See More</button></a>
+                    </div>
+                    <div class="right-image"><a href="/coke_Artivive.html"><video playsinline autoplay muted loop src="/images/aritivewithipad.webm"></video></a></div>
+                </div>
+                </div>
+            </section>
+            <section class="section-a">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+                    data-aos-duration="2000">
+                    <div class="container">
+                        <div class="right-image"><a href="/eaten.html"><img src="/images/posters.png" alt=""></a></div>
+                        <div class="text-container">
+                                <h1 class="title calluna-color">Have You Eaten Yet? — Poster Series </h1>
+                                <p class="description">A website mockup that organizes vaying aspects of Solid State Storage into an easy to read and manage system.</p>
+                                <a href="/eaten.html"><button class="button button1">See More</button></a>
+                            </div>
+                            </div>
+                    </div>
+                </section>
 
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                  AOS.init({
+                      once: true
+                  });
+                </script>
+</body>
 </html>
